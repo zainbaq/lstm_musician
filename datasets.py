@@ -4,6 +4,8 @@ import torchaudio
 import torch
 from torch.utils.data import Dataset
 
+torchaudio.set_audio_backend("soundfile")
+
 class WaveformDataset(Dataset):
     
     
